@@ -1,7 +1,6 @@
 /* eslint-disable react/display-name */
 import { ThumbUpIcon } from "@heroicons/react/outline";
-import Image from "next/legacy/image";
-import Router from "next/router";
+import Image from "next/legacy/image";;
 import { forwardRef } from "react";
 
 const ThumbNail = forwardRef(({ result }, ref) => {
