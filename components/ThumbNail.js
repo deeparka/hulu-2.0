@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import { ThumbUpIcon } from "@heroicons/react/outline";
-import Image from "next/legacy/image";;
+import Image from "next/legacy/image";
 import { forwardRef } from "react";
 
 const ThumbNail = forwardRef(({ result }, ref) => {
@@ -34,7 +34,7 @@ const ThumbNail = forwardRef(({ result }, ref) => {
           {result.title || result.original_name}
         </h2>
         <p
-          className="flex items-center md:opacity-0 
+          className="flex items-center transition-all duration-100 ease-in-out md:opacity-0 
                 md:group-hover:opacity-100 sm:opacity-100"
         >
           {result.media_type && `${result.media_type} -- `}
