@@ -1,10 +1,12 @@
 /* eslint-disable react/display-name */
 import { ThumbUpIcon } from "@heroicons/react/outline";
 import Image from "next/legacy/image";
+import Router from "next/router";
 import { forwardRef } from "react";
 
 const ThumbNail = forwardRef(({ result }, ref) => {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
+  console.log(result);
 
   return (
     <div
